@@ -29,6 +29,14 @@ body{
     border-bottom: var(--cor-secundaria) 1px solid;
     z-index: 999;
 }
+@media only screen and (max-width: 768px) {
+    .navbar{
+        justify-content: center;
+    }
+}
+
+
+
 
 .navbar > ul > span {
     padding:  10px 30px;
@@ -60,6 +68,7 @@ body{
     align-items: center;
     
 }
+
 @media only screen and (max-width: 1400px) {
 
     .fundo-principal{
@@ -70,6 +79,18 @@ body{
     }
 
 }
+
+@media only screen and (max-width: 768px) {
+    .fundo-principal{
+        background: #6c584d;
+        height: 100vh;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr auto;
+
+    }
+}
+
+
 .area-principal > .fundo-principal > h1{
     margin-bottom: 100px;
     color: var(--cor-de-texto);
@@ -84,6 +105,8 @@ body{
     grid-column: 1;
     font-family: 'Courgette', cursive;
 }
+
+
 .cvdown{
     display: flex;
     margin-top: 200px;
@@ -109,6 +132,29 @@ body{
     background-color: #ffffff;
     border: 1px solid black;
     color: black;
+    
+}
+@media only screen and (max-width: 768px) {
+    .area-principal > .fundo-principal > h1{
+        grid-row: 2;
+        
+    }
+    .area-principal > .fundo-principal > h1 > span{
+        grid-row: 2;
+        color: var(--cor-secundaria);
+    } 
+    .cvdown{
+        grid-row: 2;
+        margin-top: 100px;
+        background-color: var(--cor-secundaria);
+        color: var(--cor-de-texto);
+    }
+    .cvdown:active{
+        grid-row: 2;
+        margin-top: 90px;
+        background-color: var(--cor-principal);
+        color: var(--cor-de-texto-secundario);
+    }
 }
 
 .imagem-principal{
@@ -130,6 +176,14 @@ body{
     border: solid 1px var(--cor-secundaria);
     grid-row: 1;
     animation: myAnim 4s ease 0s infinite normal none;
+}
+@media only screen and (max-width: 768px) {
+    .imagem-principal{
+        grid-row: 1;
+        grid-column: 1;
+        width: 80%;
+        height: 100%;
+    }
 }
 @keyframes myAnim {
 	0%,
@@ -197,6 +251,10 @@ body{
     display: flex;
     justify-content: center;
 }
+
+
+
+
 .sobre-mim{
     background-color: var(--cor-secundaria);
     max-width: 1024px;
@@ -209,6 +267,29 @@ body{
     align-items: center;
     
 }
+@media only screen and (max-width: 768px) {
+    .sobremim{
+        background-color: var(--cor-secundaria);
+        height: 100vh;
+        border-top: #20140e solid 1px;
+        border-bottom: #20140e solid 1px;
+        display: flex;
+        justify-content: center;
+    }
+    .sobre-mim{
+        background-color: var(--cor-secundaria);
+        max-width: 1024px;
+        width: 100%;
+        height: 100%;
+        display: grid;
+        grid-gap: 50px;
+        grid-template-columns: 1fr;
+
+        justify-items: center;
+        align-items: center;
+        
+    }
+}
 .sobre-mim-imagem{
     background-image: url(../img/Chopper.png);
     background-position: center;
@@ -218,6 +299,13 @@ body{
     height: 100%;
     transition: all 0.5s;
     animation: myAnim 10s ease 0s infinite normal none;
+}
+@media only screen and (max-width: 768px) {
+    .sobre-mim-imagem{
+        background-image: none;
+        display: none;
+        visibility: hidden;
+    }
 }
 .sobre-mim-imagem:hover{
     background-image: url(../img/chopperhover.png);
@@ -244,7 +332,27 @@ body{
     margin-top: 10px;
 }
 
-
+@media only screen and (max-width: 768px) {
+    .sobre-mim-texto{
+        margin: 0 50px ;
+    }
+    .sobre-mim-texto > h2{
+     
+        
+        color: var(--cor-de-texto);
+        margin-bottom: 10px;
+        font-size: 1.8em;
+        font-family: "Courgette";
+    }
+    .sobre-mim-texto > span{
+        color: var(--cor-de-texto);
+        text-align: left;
+        font-family: 'Signika negative';
+        text-indent: 2em;
+        margin-top: 10px;
+        font-size: 0.9em;
+    }
+}
 
 .habilidades{
     
