@@ -60,3 +60,4 @@ function reposicionarVerMenos(){
     githubLinkSubir.classList.remove('githubredirectactive');
     console.log(botaoVerMais, botaoVerMenos, githubLinkSubir);
 }
+
