@@ -61,3 +61,41 @@ function reposicionarVerMenos(){
     console.log(botaoVerMais, botaoVerMenos, githubLinkSubir);
 }
 
+    //Click de redirecionamento
+
+
+    const quadrosRedirect = document.querySelectorAll('.quadros');
+    console.log(quadrosRedirect);
+
+    quadrosRedirect.forEach(  (elemento, index) => {
+        let index1 = index;
+        let elemento1 = elemento;
+        console.log(elemento1)
+        elemento.addEventListener('click', (evento) => {
+         console.log('Index: ' +  index1 + ' Value: ' + elemento1.value);
+    
+         
+            switch(index1){
+                case 0:
+                    window.location.href = 'https://gmullerc.github.io/Petcher/'
+                    break;
+                case 1:
+                    window.location.href = 'https://gmullerc.github.io/Jogo-da-cobra/'
+                    break;
+                case 2:
+                    window.location.href = 'https://gmullerc.github.io/CloneDisney/'
+                    break;
+                case 3:
+                    window.location.href = 'https://github.com/gMullerc/contadorDeHoras'
+                    break;
+                case 4:
+                    window.location.href = 'https://github.com/gMullerc/TypeScriptCursoNegociacoes/settings'
+                    break;
+                case 5:
+                    
+                    break;                
+    
+        }
+    
+        } )
+    } );

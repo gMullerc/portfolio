@@ -61,31 +61,7 @@ body{
 .menu-hamburguer{
     visibility: hidden;        
 }   
-@media only screen and (max-width: 768px) {
-
-    .container{ 
-        position: fixed;
-        width: 120px;
-        background-color: #20140e;
-
-        
-    }
-    .active .btn{
-        width: 200px;
-        height: 100vh;
-        background-color: #a31502   ;
-    }
-       .btn {
-        
-        width: 60px;
-        height: 60px;
-        cursor: pointer;
-        background-color: #ffffff;
-
-       }
-       
-       
-}
+   
 .fundo-principal{
     background: linear-gradient(-60.13deg, #6c584d 50%,  #f0dbaa 50%);
     height: 100vh;
@@ -806,16 +782,16 @@ body{
     
 }
 .imagem-4{
-    background-image: url(../img/Petcher.jpeg);
+    background-image: url(../img/Countdown.PNG);    
 
 }
 
 .imagem-5{
-    background-image: url(../img/Cobra.jpeg);
+    background-image: url(../img/Negociacoes.PNG);
 
 }
 .imagem-6{
-    background-image: url(../img/Disney.jpeg);
+    
     
 }
 .imagem-1, .imagem-2, .imagem-3, .imagem-4, .imagem-5, .imagem-6{
@@ -826,6 +802,52 @@ body{
 }
 
 footer{
-    height: 20vh;
+
+    justify-content: center;
+    display: flex;
     
+    height: 20vh;
+}
+.contate{
+    background-color: #6c584d;
+    max-width: 1024px;
+    margin: 0 auto;
+    display: grid;
+    grid-row: 1fr 1fr 1fr;
+    justify-items: center;
+}
+.contate > h2 {
+    color: var(--cor-secundaria);
+    font-family: 'Courgette';
+}
+.contate > h3 {
+    font-family: 'Signika negative';
+    color: var(--cor-secundaria);
+    transition: all 1s;
+    font-size: 1.1em;
+}
+.contate > h3:hover{
+    text-decoration: underline;
+    font-size: 1.2em;
+}
+.go-top{
+    top: 90%;
+    left: 95%;
+    display: flex;
+    position: fixed;
+    border-radius: 5px;
+    border: 1px solid black;
+    background-color: var(--cor-secundaria);
+    padding: 10px;
+    transition: 1s all;
+    color: var(--cor-de-texto);
+    font-size: 1.2em;
+    cursor: pointer;
+}
+.go-top:hover{
+    padding: 11px;
+    background-color: var(--cor-principal);
+    color: var(--cor-secundaria);
+    border: 1px solid black;
+    font-size: 1.2em;
 }
