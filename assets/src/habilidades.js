@@ -19,12 +19,8 @@ const sobreSkill = [
 skills.forEach(  (elemento, index) => {
     let index1 = index;
     let elemento1 = elemento;
-    console.log(elemento1)
     elemento.addEventListener('click', (evento) => {
-     console.log('Index: ' +  index1 + ' Value: ' + elemento1.value);
-
-     
-          
+           
         switch(index1){
             case 0:
                 descricao.innerHTML = `<p>${sobreSkill[0]} </p>` ;

@@ -58,21 +58,21 @@ function reposicionarVerMenos(){
     botaoVerMais.classList.remove('ver-maisactive');
     botaoVerMais.classList.remove('ver-menosactive');
     githubLinkSubir.classList.remove('githubredirectactive');
-    console.log(botaoVerMais, botaoVerMenos, githubLinkSubir);
+
 }
 
     //Click de redirecionamento
 
 
     const quadrosRedirect = document.querySelectorAll('.quadros');
-    console.log(quadrosRedirect);
+
 
     quadrosRedirect.forEach(  (elemento, index) => {
         let index1 = index;
         let elemento1 = elemento;
-        console.log(elemento1)
+
         elemento.addEventListener('click', (evento) => {
-         console.log('Index: ' +  index1 + ' Value: ' + elemento1.value);
+
     
          
             switch(index1){
