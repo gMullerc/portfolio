@@ -6,19 +6,37 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./assets/css/style.css">
     <title>Guilherme</title>
-    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" integrity="sha512-HK5fgLBL+xu6dm/Ii3z4xhlSUyZgTT9tuc/hSrtw6uzJOvgRr2a9jyxxT1ely+B+xFAmJKVSTbpM/CuL7qxO8w==" crossorigin="anonymous" />
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
 </head>
     <body>
+
+
+        <nav class="menu-mobile">
+            
+            <ul>
+              <li class="codiv-mobile">Inicio</li>
+              <li class="codiv-mobile">Sobre mim</li>
+              <li class="codiv-mobile">Habilidades</li>
+              <li class="codiv-mobile">Projetos</li>
+            </ul>
+          </nav>
+          <span class="btn-menu">
+            <span></span>
+            <span></span>
+            <span></span>
+          </span>
+          
+
         <nav class="navbar">
            
             </div>
             <ul>
-                <span class="inicio">Início</span>
-                <span>Sobre Mim</span>
-                <span>Projetos</span>
-                <span>Habilidades</span>
+                <span class="condiv">Início</span>
+                <span class="condiv">Sobre mim</span>
+                <span class="condiv">Habilidades</span>
+                <span class="condiv">Projetos</span>
             </ul>
 
             </div>
@@ -28,38 +46,32 @@
     <section class="area-principal">
         <div class="fundo-principal">
             <h1>Olá, <br>
-            Eu sou o <span>Guilherme</span>,<br>
+            Eu sou o <span>Guilherme</span>.<br>
             Desenvolvedor Front end!    
             </h1>
             
-            <a class="cvdown" href="./assets/download/CurriculoAtt (5).pdf" download="Guilherme-MullerCV">Baixe aqui o CV! </a>
+            <a class="cvdown" href="./assets/download/GuilhermeCurriculo (1).pdf" download="Guilherme-MullerCV">Baixe aqui o CV! </a>
            
 
-            <div class="imagem-principal" >
-            
-        </div>
+            <div class="imagem-principal" ></div>
         </div>
 
     </section>
 
-    <section class="sobremim">
+    <section id="sobremim"  class="sobremim">
         <div class="sobre-mim">
             <div class="sobre-mim-imagem"></div>
-            <div class="sobre-mim-texto">
+            <div  class="sobre-mim-texto">
                 <h2>Sobre mim</h2>
-                <span>Meu nome é Guilherme Muller, tenho 19 anos, atualmente estou cursando Ciências da Computação 2º semestre na Universidade Nove de Julho (UNINOVE). Sou fascinado pela área de desenvolvimento desde que realizei meu curso técnico na instituição SENAC, no curso técnico em informática. <br>
-
-                    Devido a esse curso venho aprimorando meus conhecimentos e buscando novas formas de melhorar meu desenvolvimento pessoal e acadêmico. Já realizei alguns projetos pessoais durante essa trajetória que me deram a competência e aptidão em Lógica de programação, JavaScript, TypeScript e Design responsivos com HTML e CSS. Já utilizei as seguintes linguagens de programação: Python, C++, C#, PHP e JS. <br>
-                    
-                    Meus principais pontos positivos são: Trabalho em grupo, visão analítica, facilidade no aprendizado e proatividade.</span>
+                <span class="sobremim-texto"></span>
             </div>
         </div>
     </section>
 
-    <section class="habilidades">
+    <section id="habilidades" class="habilidades">
         
         <div class="habilidades-menu">
-            <h2 class="habilidades-titulo">Habilidades</h2>
+            <h2  class="habilidades-titulo">Habilidades</h2>
             <div class="habilidades-conteiner">
                 <div class="quadro-habilidades quadro-habilidades-js skill1"></div> 
                 <div class="quadro-habilidades quadro-habilidades-html skill2"></div> 
@@ -75,9 +87,9 @@
         </div>
     </section>
 
-    <section class="projetos">
+    <section id="projetos" class="projetos">
         <div class="meus-projetos">
-            <h2 class="projetos-titulo" > Projetos </h2>
+            <h2 class="projetos-titulo"  > Projetos </h2>
             <div class="quadros">
                 <img src="" alt="" class="imagem-1">
                 <div class="descricao">Petcher</div>
@@ -102,7 +114,7 @@
                 <img src="" alt="" class="imagem-6">
                 <div class="descricao">Em breve</div>
             </div>
-
+            
 
 
             <button class="ver-mais">ver mais</button>
@@ -113,18 +125,28 @@
         
     </section>
 
+    <section class="forms">
+        <h2>Contate-me</h2>
+        <form class="formulario" method="post" action="https://formsubmit.co/guilherme.mcosta15@gmail.com">
+            <input type="text" name="nome" class="campo" placeholder="Nome" required=""/>   
+            <input type="text" name="email" class="campo" placeholder="E-mail" required=""/>
+            <textarea name="message" class="campo" placeholder="Mensagem" required=""></textarea>
+            <input type="hidden" name="_captcha" value="false"> 
+            <input type="hidden" name="_next" value="">  
+            <button type="submit" class="botao"> Enviar </button>
+                   
+       </form>
+    </section>
 
-    <i class='go-top bx bx-up-arrow-alt'></i>
 
-    <footer>
-        <div class="contate">
-            <h2>Contate-me</h2>
-            <h3>Email: guilherme.mcosta15@gmail.com</h3>
-            <h3>(11)98542-1298</h3>
-        </div>
-    </footer>
+    <i class='go-top bx bx-up-arrow-alt condiv' ></i>
+
+
+    <script src="./assets/src/hamburguer.js"></script>
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
     <script src="./assets/src/habilidades.js"></script>
     <script src="./assets/src/projetos.js"></script>
     <script src="./assets/src/scroll.js"></script>
+    <script src="./assets/src/sobremim.js"></script>
 </body>
 </html>
